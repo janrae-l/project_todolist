@@ -18,3 +18,9 @@ const addTodo = {
 };
 
 Object.assign(TodoList.prototype, addTodo);
+
+function createProject() {
+  const uniqueID = crypto.randomUUID();
+  const proj = { uniqueID };
+  return proj;
+}
