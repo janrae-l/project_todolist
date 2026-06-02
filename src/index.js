@@ -16,3 +16,5 @@ const addTodo = {
     return todo;
   },
 };
+
+Object.assign(TodoList.prototype, addTodo);
