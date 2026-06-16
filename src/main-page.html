@@ -8,6 +8,28 @@
   <body>
     <h1>Todos</h1>
     <button class="create-proj">Create Project</button>
+    <dialog>
+      <form action="" class="todo-item">
+        <p>
+          <label for="title"></label>
+          Title:
+          <input type="text" id="title" name="title" />
+        </p>
+        <p>
+          <label for="dueDate">Due Date: </label>
+          <input type="date" id="dueDate" name="dueDate" />
+          <input type="submit" />
+        </p>
+        <p>
+          <label for="priority">Priority: </label>
+          <input type="text" id="priority" name="priority" />
+        </p>
+        <p>
+          <label for="description">Description: </label>
+          <input type="text" id="description" name="description" />
+        </p>
+      </form>
+    </dialog>
 
     <div class="content"></div>
   </body>
