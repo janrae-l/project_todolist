@@ -29,10 +29,10 @@ function createProject() {
 class ProjectList {
   constructor(title) {
     this.title = title;
-    const projID = crypto.randomUUID();
-    const proj = [{ projID: projID, title: this.title }];
+    this.projID = crypto.randomUUID();
   }
   projectArr() {
+    const proj = [{ projID: this.projID, title: this.title }];
     return proj;
   }
 }
