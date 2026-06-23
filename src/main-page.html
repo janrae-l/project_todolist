@@ -9,6 +9,20 @@
     <h1>Todos</h1>
     <button class="create-proj">Create Project</button>
     <dialog>
+      <form action="" class="project-form">
+        <p>
+          <label for="projectTitle">
+            Project Title:
+            <input type="text" id="projectTitle" name="projectTitle" />
+          </label>
+        </p>
+        <div>
+          <button value="cancel" formmethod="dialog">Cancel</button>
+          <button class="confirmProj">Confirm</button>
+        </div>
+      </form>
+    </dialog>
+    <dialog>
       <form action="" class="todo-item">
         <p>
           <label for="title"></label>
@@ -28,6 +42,10 @@
           <label for="description">Description: </label>
           <input type="text" id="description" name="description" />
         </p>
+        <div>
+          <button value="cancel" formmethod="dialog">Cancel</button>
+          <button class="confirmTodo">Confirm</button>
+        </div>
       </form>
     </dialog>
 
