@@ -28,7 +28,7 @@ function createProject() {
   return proj;
 }
 
-class ProjectList {
+export class ProjectList {
   constructor(title) {
     this.title = title;
     this.projID = crypto.randomUUID();
