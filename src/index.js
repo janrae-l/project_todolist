@@ -1,4 +1,6 @@
-"use strict";
+import { projectWrapper } from "./userInteraction.js";
+
+("use strict");
 
 class TodoList {
   constructor(title, dueDate, description) {

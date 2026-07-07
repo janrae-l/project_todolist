@@ -23,6 +23,7 @@ const todoDialog = document.querySelector(".todo-dialog");
 function projectWrapper() {
   const titleValue = document.querySelector("#projectTitle").value;
   //how to send the returned value to another module since it is needed in the core logic
+  return titleValue;
 }
 
 bigContainer.addEventListener("click", (event) => {
