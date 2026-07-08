@@ -20,10 +20,21 @@ todoItemBtn.setAttribute("id", "confirmTodo");
 const projDialog = document.querySelector(".proj-dialog");
 const todoDialog = document.querySelector(".todo-dialog");
 
-function projectWrapper() {
-  const titleValue = document.querySelector("#projectTitle").value;
+//This function will return the passed value and it will be used as an argument of the project class
+
+export function projectWrapper() {
+  return (titleValue = document.querySelector("#projectTitle").value);
   //how to send the returned value to another module since it is needed in the core logic
-  return titleValue;
+}
+
+export function todoItem() {
+  titleValue = document.querySelector("#title").value;
+  dueDateValue = document.querySelector("#dueDate").value;
+  priorityValue = document.querySelector("#priority").value;
+  descValue = document.querySelector("#description").value;
+
+  let arr = [titleValue, dueDateValue, priorityValue, descValue];
+  return arr;
 }
 
 bigContainer.addEventListener("click", (event) => {
@@ -31,6 +42,7 @@ bigContainer.addEventListener("click", (event) => {
     console.log(event.target.textContent);
     projDialog.showModal();
   } else if (event.target.id === "confirmProj") {
+    projectWrapper();
     //gets the details filled in by the user
     //the details are applied in the Project Class
   } else if (event.target.id === "addTodo") {
