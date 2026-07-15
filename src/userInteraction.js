@@ -9,6 +9,9 @@ createProj.setAttribute("id", "createProject");
 const confirmProjBtn = document.querySelector("confirmProj");
 confirmProjBtn.setAttribute("id", "confirmProj");
 
+//Project title save button
+const titleSave = document.querySelector(".save-title");
+titleSave.setAttribute("id", "titleSave");
 //Add todo item
 const addTodoBtn = document.querySelector(".add-todo");
 addTodoBtn.setAttribute("id", "addTodo");
@@ -34,6 +37,7 @@ export function todoItem() {
   descValue = document.querySelector("#description").value;
 
   let arr = [titleValue, dueDateValue, priorityValue, descValue];
+
   return arr;
 }
 
@@ -51,5 +55,8 @@ bigContainer.addEventListener("click", (event) => {
   } else if (event.target.id === "confirmTodo") {
     //gets the user input details and populates the Todo Item Class using the user input details
     //this needs to happen not in the same user interface
+  } else if (event.target.id === "titleSave") {
+    //this will activate a function that would get the title of the project and use it as parameters of the Project class
+    //the problem is how will this connect to the added todo items since it is in a different function?
   }
 });
