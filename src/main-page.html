@@ -10,12 +10,19 @@
     <button class="create-proj">Create Project</button>
     <dialog class="proj-dialog">
       <form action="" class="project-form">
-        <p>
-          <label for="projectTitle">
-            Project Title:
-            <input type="text" id="projectTitle" name="projectTitle" />
-          </label>
-        </p>
+        <div>
+          <p>
+            <label for="projectTitle">
+              Project Title:
+              <input type="text" id="projectTitle" name="projectTitle" />
+            </label>
+          </p>
+          <button class="save-title">Save title name</button>
+        </div>
+
+        <div>
+          <button class="add-todo">Add Todo Item</button>
+        </div>
         <div>
           <button value="cancel" formmethod="dialog">Cancel</button>
           <button class="confirmProj">Confirm</button>
